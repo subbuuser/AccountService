@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ACCOUNTSERVICE															
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${vcap.services.p-service-registry.credentials.uri}
+      
+---
+spring:
+  profiles: cloud
